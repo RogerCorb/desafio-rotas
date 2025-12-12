@@ -1,0 +1,118 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6rem;
+  gap: 3rem;
+
+  .conteudo {
+    max-width: 480px;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 1.5rem 0;
+      color: #000;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 2rem;
+
+      .btnUm {
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        background: #00745a;
+        color: #fff;
+
+        &:hover {
+          background-color: #02634c;
+        }
+      }
+
+      .btnDois {
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        border: 2px solid #00745a;
+        color: #00745a;
+      }
+    }
+  }
+}
+
+.sectionMissao {
+  height: 450px;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #00745a;
+  font-family: Inter;
+  h2 {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 60px;
+    line-height: 40px;
+    color: #ffffff;
+  }
+  p {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+  .boxCards {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 65%;
+    //flex-direction: row;
+  }
+}
+
+.sectionImpacto {
+  height: 450px;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f4f7f6;
+  font-family: Inter;
+  h2 {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 60px;
+    line-height: 40px;
+    color: black;
+  }
+  p {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    color: black;
+  }
+  .boxCardsImpacto {
+    display: flex;
+    padding: 0.5rem 0.5rem;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 65%;
+    //flex-direction: row;
+  }
+}

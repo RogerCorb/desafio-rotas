@@ -1,0 +1,51 @@
+.article {
+  width: 31%;
+  height: 95%;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  text-align: center;
+  border: solid 1px #ffffff;
+  border-radius: 14px;
+
+  h3 {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.impacto {
+  border: solid 1px black;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 31%;
+  height: 95%;
+  padding: 3.7rem 1rem;
+
+  h3 {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 28px;
+    color: #02634c;
+  }
+  p {
+    font-style: medium;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}

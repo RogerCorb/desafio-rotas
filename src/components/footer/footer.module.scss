@@ -1,0 +1,49 @@
+.footer {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b0b0b;
+  color: aliceblue;
+  font-family: inter;
+  padding: 0rem 1rem;
+  .artigosdeRodape {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    justify-content: space-around;
+    padding-top: 1.1rem;
+    article {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      height: 24vh;
+      justify-content: space-evenly;
+      .divLogo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      h5 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  .copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 1000px;
+    height: 53px;
+    border-top: solid 1px #000000;
+    p {
+      font-size: 14px;
+    }
+  }
+}

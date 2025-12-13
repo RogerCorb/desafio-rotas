@@ -116,3 +116,117 @@
     //flex-direction: row;
   }
 }
+
+@media (min-width: 200px) and (max-width: 500px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.1rem 0.5rem;
+    gap: 3rem;
+
+    .doutorImgBox {
+      img {
+        display: none;
+      }
+    }
+
+    .conteudo {
+      max-width: 480px;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin: 1.5rem 0;
+        color: #000;
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        .btnUm {
+          padding: 12px 24px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 1rem;
+          background: #00745a;
+          color: #fff;
+
+          &:hover {
+            background-color: #02634c;
+          }
+        }
+
+        .btnDois {
+          padding: 12px 24px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 1rem;
+          border: 2px solid #00745a;
+          color: #00745a;
+        }
+      }
+    }
+  }
+
+  .sectionMissao {
+    height: auto;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    gap: 1.5rem;
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .boxCards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      article {
+        min-width: 260px;
+        min-height: 260px;
+        padding: 1.5rem 0.3rem;
+      }
+    }
+  }
+
+  .sectionImpacto {
+    height: auto;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    gap: 1.5rem;
+    h2 {
+      font-style: Bold;
+      font-size: 40px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .boxCardsImpacto {
+      flex-direction: column;
+      gap: 1.5rem;
+      height: auto;
+
+      article {
+        min-width: 200px;
+        min-height: 185px;
+        padding: 3rem 1rem;
+      }
+    }
+  }
+}

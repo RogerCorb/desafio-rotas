@@ -1,40 +1,49 @@
 .header {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-bottom: 2px solid #c7c7c7;
+
+  .BoxLogo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
-    border-bottom: 2px solid #c7c7c7;
+    gap: 0.6rem;
 
-    .BoxLogo {
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-
-        a {
-            text-decoration: none;
-            color: #000;
-            font-size: 1rem;
-            font-weight: 600;
-        }
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 1rem;
+      font-weight: 600;
     }
+  }
 
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+      text-decoration: none;
+      color: #000;
+
+      &:nth-child(2) {
+        background-color: #00745a;
+        color: #fff;
+        padding: 0.6rem 1.3rem;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+  .header {
+    padding: 1rem 0.5rem;
     nav {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-
-        a {
-            text-decoration: none;
-            color: #000;
-
-            &:nth-child(2) {
-                background-color: #00745A;
-                color: #fff;
-                padding: 0.6rem 1.3rem;
-                border-radius: 8px;
-                font-weight: 600;
-            }
-        }
+      display: none;
     }
+  }
 }

@@ -47,3 +47,29 @@
     }
   }
 }
+
+@media (min-width: 200px) and (max-width: 500px) {
+  .footer {
+    height: auto;
+    width: 100%;
+    padding: 0 0.3rem;
+    .artigosdeRodape {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: auto;
+      height: auto;
+      article {
+        min-width: 160px;
+        height: 23vh;
+      }
+    }
+    .copy {
+      width: 100%;
+      border-top: 0;
+      justify-content: center;
+      p {
+        font-size: 9.2px;
+      }
+    }
+  }
+}

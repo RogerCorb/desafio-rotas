@@ -2,6 +2,7 @@ import s from "./home.module.scss";
 import Saude from "../../assets/saude.png";
 import Doutor from "../../assets/doutor.png";
 import Article from "../../components/article/Article";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -20,9 +21,9 @@ const Home = () => {
           </p>
 
           <div className={s.buttons}>
-            <a className={s.btnUm} href="">
+            <Link to="/voluntario" className={s.btnUm}>
               Seja Voluntário
-            </a>
+            </Link>
             <a className={s.btnDois} href="">
               Como Ajudar
             </a>

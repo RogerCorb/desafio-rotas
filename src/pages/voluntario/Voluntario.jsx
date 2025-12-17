@@ -14,9 +14,9 @@ const Voluntario = () => {
           Junte-se a nós e faça a diferença na vida de pessoas que precisam
         </p>
         <div className={style.divArticles}>
-          {boxCardsVoluntario.map((obj) => (
+          {boxCardsVoluntario.map((obj, index) => (
             <Article
-              key={obj.titulo}
+              key={index}
               titulo={obj.titulo}
               conteudo={obj.conteudo}
             />

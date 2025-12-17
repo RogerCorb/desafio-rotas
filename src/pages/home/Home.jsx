@@ -61,9 +61,9 @@ const Home = () => {
           Transformando a saúde de nossa comunidade, um paciente de cada vez
         </p>
         <div className={s.boxCardsImpacto}>
-          {boxCardsImpacto.map((obj) => (
+          {boxCardsImpacto.map((obj, index) => (
             <Article
-              key={obj.titulo}
+              key={index}
               titulo={obj.titulo}
               conteudo={obj.conteudo}
               estilo={obj.estilo}

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import s from "./header.module.scss";
 import Logo from "../../assets/logo.png";
-import Menu from "../menu/Menu";
+import Menu from "./components/menu/Menu.jsx";
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
         <img src={Logo} alt="Imagem de logo do site Médicos Voluntários" />
         <Link to="/">Médicos & Dentistas</Link>
       </div>
-      <Menu></Menu>
+      <Menu />
       <nav>
         <Link to="/">Home</Link>
         <Link to="/voluntario">Seja Voluntário</Link>

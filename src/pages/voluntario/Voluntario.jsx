@@ -1,10 +1,11 @@
 import style from "./voluntario.module.scss";
 import Article from "../../components/article/Article";
+import { boxCardsVoluntario } from "../../components/article/descriptionCards";
 
 const Voluntario = () => {
-  function setChoice() {
-    (e) => e.preventdefault();
-  }
+  const setChoice = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <section className={style.section}>
@@ -13,22 +14,17 @@ const Voluntario = () => {
           Junte-se a nós e faça a diferença na vida de pessoas que precisam
         </p>
         <div className={style.divArticles}>
-          <Article
-            titulo="Impacto Direto"
-            conteudo="Sua dedicação salva vidas e transforma comunidades"
-          />
-          <Article
-            titulo="Crescimento Pessoal"
-            conteudo="Desenvolva habilidades e cresça profissionalmente"
-          />
-          <Article
-            titulo="Comunidade"
-            conteudo="Faça parte de uma rede de profissionais comprometidos"
-          />
+          {boxCardsVoluntario.map((obj) => (
+            <Article
+              key={obj.titulo}
+              titulo={obj.titulo}
+              conteudo={obj.conteudo}
+            />
+          ))}
         </div>
       </section>
       <section className={style.sectionForm}>
-        <form action="" className={style.form}>
+        <form onSubmit={setChoice} className={style.form}>
           <h5>Inscrição para voluntários</h5>
           <h6>Dados Pessoais</h6>
           <div className={style.nomeEmail}>
@@ -65,7 +61,7 @@ const Voluntario = () => {
           />
           <div className={style.final}>
             <p>entraremos em contato para mais informações</p>
-            <button onClick={setChoice}>enviar inscrição</button>
+            <button type="submit">enviar inscrição</button>
           </div>
         </form>
       </section>

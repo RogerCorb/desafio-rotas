@@ -33,3 +33,18 @@ export const boxCardsImpacto = [
   },
   { titulo: "5+", conteudo: "Anos de Dedicação", estilo: "impacto" },
 ];
+
+export const boxCardsVoluntario = [
+  {
+    titulo: "Impacto Direto",
+    conteudo: "Sua dedicação salva vidas e transforma comunidades",
+  },
+  {
+    titulo: "Crescimento Pessoal",
+    conteudo: "Desenvolva habilidades e cresça profissionalmente",
+  },
+  {
+    titulo: "Comunidade",
+    conteudo: "Faça parte de uma rede de profissionais comprometidos",
+  },
+];

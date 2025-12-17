@@ -2,6 +2,9 @@ import style from "./voluntario.module.scss";
 import Article from "../../components/article/Article";
 
 const Voluntario = () => {
+  function setChoice() {
+    (e) => e.preventdefault();
+  }
   return (
     <>
       <section className={style.section}>
@@ -62,7 +65,7 @@ const Voluntario = () => {
           />
           <div className={style.final}>
             <p>entraremos em contato para mais informações</p>
-            <button>enviar inscrição</button>
+            <button onClick={setChoice}>enviar inscrição</button>
           </div>
         </form>
       </section>

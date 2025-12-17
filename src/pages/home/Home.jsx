@@ -3,6 +3,10 @@ import Saude from "../../assets/saude.png";
 import Doutor from "../../assets/doutor.png";
 import Article from "../../components/article/Article";
 import { Link } from "react-router-dom";
+import {
+  boxCards,
+  boxCardsImpacto,
+} from "../../components/article/descriptionCards";
 
 const Home = () => {
   return (
@@ -41,21 +45,14 @@ const Home = () => {
           Transformar vidas através do acesso universal a saúde de qualidade
         </p>
         <div className={s.boxCards}>
-          <Article
-            titulo="Acesso Equitativo"
-            conteudo="Garantir que todos tenham acesso a cuidados de saúde de qualidade, independentemente de sua condição financeira."
-            estilo="article"
-          ></Article>
-          <Article
-            titulo="Comunidade Forte"
-            conteudo="Construir uma rede de profissionais de saúde dedicados a servir com compaixão e profissionalismo."
-            estilo="article"
-          ></Article>
-          <Article
-            titulo="Bem-estar Total"
-            conteudo="Oferecer atendimento integral em medicina geral e odontologia para melhorar a qualidade de vida."
-            estilo="article"
-          ></Article>
+          {boxCards.map((obj) => (
+            <Article
+              key={obj.titulo}
+              titulo={obj.titulo}
+              conteudo={obj.conteudo}
+              estilo={obj.estilo}
+            ></Article>
+          ))}
         </div>
       </section>
       <section className={s.sectionImpacto}>
@@ -64,26 +61,14 @@ const Home = () => {
           Transformando a saúde de nossa comunidade, um paciente de cada vez
         </p>
         <div className={s.boxCardsImpacto}>
-          <Article
-            titulo="2,500+"
-            conteudo="Pessoas Atendidas"
-            estilo="impacto"
-          ></Article>
-          <Article
-            titulo="150+"
-            conteudo="Profissionais Voluntários"
-            estilo="impacto"
-          ></Article>
-          <Article
-            titulo="98%"
-            conteudo="Satisfação dos Pacientes"
-            estilo="impacto"
-          ></Article>
-          <Article
-            titulo="5+"
-            conteudo="Anos de Dedicação"
-            estilo="impacto"
-          ></Article>
+          {boxCardsImpacto.map((obj) => (
+            <Article
+              key={obj.titulo}
+              titulo={obj.titulo}
+              conteudo={obj.conteudo}
+              estilo={obj.estilo}
+            ></Article>
+          ))}
         </div>
       </section>
     </main>

@@ -1,0 +1,26 @@
+.sectioNotfound {
+  //height: auto100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 30px;
+    color: black;
+  }
+}
+
+.btnUm {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  background: #00745a;
+  color: #fff;
+
+  &:hover {
+    background-color: #02634c;
+  }
+}

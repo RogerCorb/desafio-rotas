@@ -1,0 +1,47 @@
+@media (min-width: 500px) and (max-width: 1300px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+  .menu {
+    width: 29px;
+    height: 30px;
+
+    border: solid 1px #02634c;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+    p {
+      letter-spacing: 0%;
+      height: 3px;
+      width: 20px;
+      background-color: black;
+      font-family: inter;
+      font-weight: 900;
+    }
+
+    .nav {
+      margin-right: 50px;
+      width: 75px;
+      height: 50px;
+      border: solid 1px #02634c;
+      border-radius: 14px;
+      background-color: antiquewhite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+
+      a {
+        font-size: 10px;
+      }
+    }
+  }
+}

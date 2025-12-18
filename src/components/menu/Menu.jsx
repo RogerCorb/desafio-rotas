@@ -9,21 +9,18 @@ const Menu = () => {
   };
 
   return (
-    <>
-      <div onClick={controlMenu} className={style.menu}>
-        <p> </p>
-        <p> </p>
-        <p> </p>
+    <div onClick={controlMenu} className={style.menu}>
+      <p> </p>
+      <p> </p>
+      <p> </p>
 
-        {isOpen && (
-          <nav className={style.nav}>
-            <Link to="/">Home</Link>
-
-            <Link to="/voluntario">Voluntário</Link>
-          </nav>
-        )}
-      </div>
-    </>
+      {isOpen && (
+        <nav className={style.nav}>
+          <Link to="/">Home</Link>
+          <Link to="/voluntario">Voluntário</Link>
+        </nav>
+      )}
+    </div>
   );
 };
 
